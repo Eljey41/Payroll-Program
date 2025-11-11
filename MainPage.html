@@ -7,51 +7,51 @@
     <link rel="stylesheet" href="MainPage.css">
 </head>
 <body>
-    
 
         <h1>PAYROLL PROGRAM</h1>
         <div class="container">
-            <form id="loginForm">
+            <form>
                 <div id="content">
-                    <label class="label" >ID Number:</label>
-                    <input type="text" class="input" id="idNumber" required>
+                    <label class="label">ID Number:</label>
+                    <input type="text" class="input" id="idNumber" onkeypress="return /[0-9-]/.test(event.key)">
                 </div>
 
                 <div id="content">
                     <label>Last Name:</label>
-                    <input type="text" class="input" id="lname" required><br>
+                    <input type="text" class="input" id="lname" onkeypress="return /[A-Za-z ]/.test(event.key)">
                 </div>
 
                 <div id="content">
                     <label>First Name:</label>
-                    <input type="text" class="input" id="fname" >
+                    <input type="text" class="input" id="fname" onkeypress="return /[A-Za-z ]/.test(event.key)">
                 </div>
 
                 <div id="content">
                     <label>Middle Name: </label>
-                    <input type="text" class="input" id="mname" >
+                    <input type="text" class="input" id="mname" onkeypress="return /[A-Za-z ]/.test(event.key)">
                 </div>
 
                 <div id="content">
                     <label>Position: </label>
-                    <input type="text" class="input" id="pos" >
+                    <input type="text" class="input" id="pos" onkeypress="return /[A-Za-z ]/.test(event.key)">
                 </div>
 
-                <div    id="content">
+                <div id="content">
                     <label>Rate: </label>
-                    <input type="text" class="input" id="rate" >
+                    <input type="text" class="input" id="rate" onkeypress="return /[0-9]/.test(event.key)">
                 </div>
 
                 <div id="content">
                     <label>Work Days: </label>
-                    <input type="text" class="input" id="wdays" >
+                    <input type="text" class="input" id="wdays" onkeypress="return /[0-9]/.test(event.key)">
                 </div>
 
                 <div class="submit">
-                    <input type="submit" value="SUBMIT" id="submit">
+                    <button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
                 </div>
             </form>
         </div>
-    <script src="display.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
