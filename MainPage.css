@@ -58,7 +58,7 @@ label {
     
 }
 
-#submit {
+#submitBtn {
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -67,7 +67,7 @@ label {
     
 }
 
-#submit:focus {
+#submitBtn:focus {
     background-color: lightgreen;
     color: red;
     border-color: black;
